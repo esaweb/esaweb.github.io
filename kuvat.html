@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<title>ESA'S HOMEPAGE - Kuvat</title>
+<style>
+body { margin: 0; background-color: #000033; background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 37px 37px; font-family: "Times New Roman", serif; color: #000000; cursor: default; }
+a { color: #0000ee; text-decoration: underline; }
+a:visited { color: #551a8b; }
+.page { width: 780px; margin: 15px auto; background: #c0c0c0; border: 3px outset #eeeeee; padding: 5px; }
+.header { background: #000080; color: yellow; text-align: center; border: 3px outset #eeeeee; padding: 12px; }
+.header h1 { margin: 0; font-family: "Arial Black", Arial, sans-serif; font-size: 34px; text-shadow: 2px 2px #000000; }
+.columns { display: flex; gap: 5px; margin-top: 5px; }
+.left { width: 145px; flex-shrink: 0; }
+.middle { width: 430px; flex-grow: 1; }
+.right { width: 190px; flex-shrink: 0; }
+.nav-button { display: block; background: #c0c0c0; border: 3px outset #eeeeee; padding: 8px 4px; margin-bottom: 5px; text-align: center; font-family: Arial, sans-serif; font-weight: bold; font-size: 13px; color: black; text-decoration: none; }
+.nav-button:active, .nav-button.active { border: 3px inset #eeeeee; background: #a0a0a0; }
+.box { background: #eeeeee; border: 3px outset #ffffff; margin-bottom: 7px; padding: 7px; }
+.box-title { background: #000080; color: white; font-weight: bold; padding: 3px; margin: -7px -7px 7px -7px; font-family: Arial, sans-serif; }
+.footer { margin-top: 5px; background: #000080; color: white; text-align: center; padding: 10px; font-size: 12px; }
+.gif-container { text-align: center; background: #000000; padding: 20px; border: 3px inset #808080; margin-top: 10px; }
+.blink { animation: blinker 0.8s steps(2, start) infinite; }
+@keyframes blinker { 50% { opacity: 0; } }
+</style>
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <div style="font-size:18px;">★ ☆ ★ ☆ ★</div>
+        <h1>ESA'S HOMEPAGE</h1>
+        <div style="font-size:18px;">DIGIKUVAGALLERIA / IMAGES</div>
+    </div>
+    <div class="columns">
+        <div class="left">
+            <div class="box">
+                <div class="box-title">MENU</div>
+                <a href="index.html" class="nav-button">ETUSIVU</a>
+                <a href="mina.html" class="nav-button">MINÄ</a>
+                <a href="kuvat.html" class="nav-button active">KUVAT</a>
+                 <a href="peli.html" class="nav-button">WORDZAP</a>
+                 <a href="irc.html" class="nav-button">IRC CHAT</a>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="box">
+                <div class="box-title">★ OMA RETRO-ANIMAATIO LIVENÄ ★</div>
+                <p>Tervetuloa galleriaan! Tämä upea pyörivä 3D-maapallo ladataan nyt pomminvarmasti suoraan omalta palvelimeltamme:</p>
+                
+                <!-- LUETAAN KUVA SUORAAN SAMASTA KANSIOSTA -->
+                <div class="gif-container">
+                    <img src="maapallo.gif" alt="Pyörivä retro-maapallo" style="width: 200px; height: 200px;">
+                </div>
+                
+                <br>
+                <center class="blink" style="color:red; font-weight:bold;">KUVIA TULOSSA LISÄÄ PIAN!!!</center>
+                <br>
+                <p><a href="index.html">← Takaisin etusivulle</a></p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="box">
+                <div class="box-title">GALLERIA INFO</div>
+                Kuva tallennettu omaan Netlify-hakemistoon! 🌍
+            </div>
+        </div>
+    </div>
+    <div class="footer">© Esa's Web World 1998-2026. All rights reserved.</div>
+</div>
+</body>
+</html>
