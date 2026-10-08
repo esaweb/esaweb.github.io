@@ -1,322 +1,359 @@
+```html
 <!DOCTYPE html>
 <html lang="fi">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ESA'S HOMEPAGE - Tervetuloa Internettiin!</title>
+<title>ESA'S HOMEPAGE - Tervetuloa Internettiin!</title>
 
-    <style>
+<style>
 
-        body {
-            background-color: #000000;
-            color: #00ff00;
-            font-family: "Courier New", monospace;
-            margin: 0;
-            padding: 10px;
-            font-size: 14px;
-        }
+body {
+    background-color: #000000;
+    color: #00ff00;
+    font-family: "Courier New", monospace;
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+}
 
-        .page {
-            max-width: 950px;
-            margin: auto;
-            border: 3px ridge #808080;
-            background-color: #000080;
-        }
+.page {
+    max-width: 950px;
+    margin: auto;
+    border: 3px ridge #808080;
+    background-color: #000080;
+}
 
-        /* HEADER */
 
-        .header {
-            text-align: center;
-            background-color: #000080;
-            padding: 15px 10px 10px 10px;
-            border-bottom: 3px ridge #c0c0c0;
-        }
+/* =========================
+   HEADER
+========================= */
 
-        .header h1 {
-            color: #ffff00;
-            font-size: 34px;
-            margin: 5px 0;
-            text-shadow: 2px 2px #ff00ff;
-        }
+.header {
+    text-align: center;
+    background-color: #000080;
+    padding: 15px 10px 10px 10px;
+    border-bottom: 3px ridge #c0c0c0;
+}
 
-        .subtitle {
-            color: #ffffff;
-            font-size: 18px;
-            font-weight: bold;
-        }
+.header h1 {
+    color: #ffff00;
+    font-size: 34px;
+    margin: 5px 0;
+    text-shadow: 2px 2px #ff00ff;
+}
 
-        .stars {
-            color: #ffffff;
-            font-size: 18px;
-            letter-spacing: 4px;
-        }
+.subtitle {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
 
-        /* MARQUEE */
+.stars {
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 4px;
+}
 
-        .marquee-box {
-            margin: 12px 5px 5px 5px;
-            border: 3px ridge #c0c0c0;
-            background-color: #000000;
-            padding: 5px 0;
-        }
 
-        .marquee-box marquee {
-            color: #ffff00;
-            font-family: Arial, sans-serif;
-            font-weight: bold;
-            font-size: 15px;
-        }
+/* =========================
+   MARQUEE
+========================= */
 
-        /* WELCOME */
+.marquee-box {
+    margin: 12px 5px 5px 5px;
+    border: 3px ridge #c0c0c0;
+    background-color: #000000;
+    padding: 5px 0;
+}
 
-        .welcome {
-            background-color: #000000;
-            border: 2px solid #00ff00;
-            margin: 12px 20px;
-            padding: 10px;
-            text-align: center;
-        }
+.marquee-box marquee {
+    color: #ffff00;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
 
-        .important {
-            color: #ff00ff;
-            font-weight: bold;
-            font-size: 15px;
-        }
 
-        /* HAKUKONEET */
+/* =========================
+   WELCOME
+========================= */
 
-        .search-engines {
-            background-color: #000000;
-            border: 2px solid #00ffff;
-            margin: 12px 20px;
-            padding: 10px;
-            text-align: center;
-        }
+.welcome {
+    background-color: #000000;
+    border: 2px solid #00ff00;
+    margin: 12px 20px;
+    padding: 10px;
+    text-align: center;
+}
 
-        .search-engines-title {
-            color: #ffff00;
-            font-weight: bold;
-            font-size: 16px;
-            margin-bottom: 8px;
-        }
+.important {
+    color: #ff00ff;
+    font-weight: bold;
+    font-size: 15px;
+}
 
-        .search-engines a {
-            display: inline-block;
-            color: #00ffff;
-            text-decoration: underline;
-            font-weight: bold;
-            margin: 4px 8px;
-            padding: 4px 8px;
-            border: 1px outset #808080;
-            background-color: #000080;
-        }
 
-        .search-engines a:hover {
-            color: #ffff00;
-            background-color: #800080;
-        }
+/* =========================
+   SEARCH ENGINES
+========================= */
 
-        /* COLUMNS */
+.search-engines {
+    background-color: #000000;
+    border: 2px solid #00ffff;
+    margin: 12px 20px;
+    padding: 10px;
+    text-align: center;
+}
 
-        .columns {
-            display: flex;
-            gap: 8px;
-            padding: 8px;
-        }
+.search-engines-title {
+    color: #ffff00;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
 
-        .left,
-        .middle,
-        .right {
-            border: 3px ridge #c0c0c0;
-            padding: 10px;
-            background-color: #000000;
-        }
+.search-engines a {
+    display: inline-block;
+    color: #00ffff;
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 4px 8px;
+    padding: 4px 8px;
+    border: 1px outset #808080;
+    background-color: #000080;
+}
 
-        .left {
-            width: 22%;
-        }
+.search-engines a:hover {
+    color: #ffff00;
+    background-color: #800080;
+}
 
-        .middle {
-            width: 48%;
-        }
 
-        .right {
-            width: 30%;
-        }
+/* =========================
+   THREE COLUMNS
+========================= */
 
-        /* BOX TITLES */
+.columns {
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+}
 
-        .box-title {
-            background-color: #c0c0c0;
-            color: #000000;
-            font-weight: bold;
-            text-align: center;
-            padding: 4px;
-            margin: -10px -10px 10px -10px;
-            font-family: Arial, sans-serif;
-        }
+.left,
+.middle,
+.right {
+    border: 3px ridge #c0c0c0;
+    padding: 10px;
+    background-color: #000000;
+}
 
-        /* MENU */
+.left {
+    width: 22%;
+}
 
-        .menu a {
-            display: block;
-            color: #00ffff;
-            text-decoration: underline;
-            padding: 5px 2px;
-            font-weight: bold;
-        }
+.middle {
+    width: 48%;
+}
 
-        .menu a:hover {
-            color: #ffff00;
-            background-color: #800080;
-        }
+.right {
+    width: 30%;
+}
 
-        /* LINKIT */
 
-        .quick-links {
-            background-color: #000000;
-            border: 2px solid #00ffff;
-            margin: 12px 20px;
-            padding: 10px;
-        }
+/* =========================
+   BOX TITLES
+========================= */
 
-        .quick-links-title {
-            color: #ffff00;
-            font-size: 16px;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 10px;
-        }
+.box-title {
+    background-color: #c0c0c0;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    padding: 4px;
+    margin: -10px -10px 10px -10px;
+    font-family: Arial, sans-serif;
+}
 
-        .link-category {
-            border: 1px solid #008080;
-            margin: 8px 0;
-            padding: 8px;
-        }
 
-        .link-category-title {
-            color: #ff00ff;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 6px;
-        }
+/* =========================
+   MENU
+========================= */
 
-        .quick-links a {
-            display: inline-block;
-            color: #00ffff;
-            text-decoration: underline;
-            font-weight: bold;
-            padding: 4px 7px;
-            margin: 3px;
-            border: 1px outset #808080;
-            background-color: #000080;
-        }
+.menu a {
+    display: block;
+    color: #00ffff;
+    text-decoration: underline;
+    padding: 5px 2px;
+    font-weight: bold;
+}
 
-        .quick-links a:hover {
-            color: #ffff00;
-            background-color: #800080;
-        }
+.menu a:hover {
+    color: #ffff00;
+    background-color: #800080;
+}
 
-        .more-links {
-            text-align: center;
-            margin-top: 10px;
-        }
 
-        .more-links a {
-            color: #ffff00;
-            font-weight: bold;
-        }
+/* =========================
+   IMPORTANT LINKS
+========================= */
 
-        /* UNDER CONSTRUCTION */
+.quick-links {
+    background-color: #000000;
+    border: 2px solid #00ffff;
+    margin-top: 12px;
+    padding: 8px;
+}
 
-        .construction {
-            color: #ffff00;
-            border: 2px dashed #ff00ff;
-            padding: 8px;
-            margin-top: 15px;
-            text-align: center;
-            font-weight: bold;
-        }
+.quick-links-title {
+    color: #ffff00;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+}
 
-        /* PICTURE */
+.link-category {
+    border-top: 1px solid #008080;
+    padding: 6px 2px;
+}
 
-        .picture {
-            text-align: center;
-            border: 2px solid #00ff00;
-            padding: 15px;
-            margin-top: 10px;
-            font-size: 40px;
-        }
+.link-category-title {
+    color: #ff00ff;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
 
-        /* INFO */
+.quick-links a {
+    display: block;
+    color: #00ffff;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 2px;
+}
 
-        .info {
-            color: #ffffff;
-            line-height: 1.6;
-        }
+.quick-links a:hover {
+    color: #ffff00;
+    background-color: #800080;
+}
 
-        /* COUNTER */
+.more-links {
+    text-align: center;
+    margin-top: 8px;
+}
 
-        .counter {
-            text-align: center;
-            margin-top: 10px;
-        }
+.more-links a {
+    color: #ffff00;
+    font-weight: bold;
+}
 
-        .counter-number {
-            display: inline-block;
-            background-color: #000000;
-            color: #00ff00;
-            border: 2px inset #808080;
-            padding: 4px 8px;
-            font-family: "Courier New", monospace;
-            font-size: 20px;
-            letter-spacing: 3px;
-        }
 
-        /* FOOTER */
+/* =========================
+   UNDER CONSTRUCTION
+========================= */
 
-        .footer {
-            border-top: 3px ridge #c0c0c0;
-            text-align: center;
-            padding: 12px;
-            color: #ffffff;
-            background-color: #000080;
-            font-size: 12px;
-        }
+.construction {
+    color: #ffff00;
+    border: 2px dashed #ff00ff;
+    padding: 8px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
 
-        .blink {
-            color: #ff0000;
-            font-weight: bold;
-        }
 
-        .small {
-            font-size: 11px;
-            color: #c0c0c0;
-        }
+/* =========================
+   PICTURE
+========================= */
 
-        /* MOBILE */
+.picture {
+    text-align: center;
+    border: 2px solid #00ff00;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 40px;
+}
 
-        @media (max-width: 700px) {
 
-            .columns {
-                flex-direction: column;
-            }
+/* =========================
+   INFO
+========================= */
 
-            .left,
-            .middle,
-            .right {
-                width: auto;
-            }
+.info {
+    color: #ffffff;
+    line-height: 1.6;
+}
 
-            .header h1 {
-                font-size: 25px;
-            }
 
-        }
+/* =========================
+   COUNTER
+========================= */
 
-    </style>
+.counter {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.counter-number {
+    display: inline-block;
+    background-color: #000000;
+    color: #00ff00;
+    border: 2px inset #808080;
+    padding: 4px 8px;
+    font-family: "Courier New", monospace;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    border-top: 3px ridge #c0c0c0;
+    text-align: center;
+    padding: 12px;
+    color: #ffffff;
+    background-color: #000080;
+    font-size: 12px;
+}
+
+.blink {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.small {
+    font-size: 11px;
+    color: #c0c0c0;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .columns {
+        flex-direction: column;
+    }
+
+    .left,
+    .middle,
+    .right {
+        width: auto;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+}
+
+</style>
 
 </head>
 
@@ -326,142 +363,258 @@
 <div class="page">
 
 
-    <!-- ========================= -->
-    <!-- HEADER -->
-    <!-- ========================= -->
+<!-- =========================
+     HEADER
+========================= -->
 
-    <div class="header">
+<div class="header">
 
-        <div class="stars">
-            ★ ☆ ★ ☆ ★
-        </div>
+    <div class="stars">
+        ★ ☆ ★ ☆ ★
+    </div>
 
-        <h1>
-            ESA'S HOMEPAGE
-        </h1>
+    <h1>
+        ESA'S HOMEPAGE
+    </h1>
 
-        <div class="subtitle">
-            TERVETULOA INTERNETTIIN!
-        </div>
+    <div class="subtitle">
+        TERVETULOA INTERNETTIIN!
+    </div>
+
+    <div class="marquee-box">
+
+        <marquee
+            behavior="scroll"
+            direction="left"
+            scrollamount="5">
+
+            ★ TERVETULOA ESA'S HOMEPAGEEN! ★
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            ★ SIGN MY GUESTBOOK! ★
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            ★ TRY WORDZAP! ★
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            ★ IRC CHAT ONLINE! ★
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            ★ UNDER CONSTRUCTION! ★
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            ★ YOU ARE VISITOR NUMBER 000413! ★
+
+        </marquee>
+
+    </div>
+
+</div>
 
 
-        <!-- 1990s MARQUEE -->
+<!-- =========================
+     WELCOME
+========================= -->
 
-        <div class="marquee-box">
+<div class="welcome">
 
-            <marquee
-                behavior="scroll"
-                direction="left"
-                scrollamount="5">
+    <div style="
+        color:#ffffff;
+        font-size:18px;
+        font-weight:bold;">
 
-                ★ TERVETULOA ESA'S HOMEPAGEEN! ★
-                &nbsp;&nbsp;&nbsp;&nbsp;
+        *** YOU HAVE FOUND MY HOMEPAGE! ***
 
-                ★ SIGN MY GUESTBOOK! ★
-                &nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
 
-                ★ TRY WORDZAP! ★
-                &nbsp;&nbsp;&nbsp;&nbsp;
+    <br>
 
-                ★ IRC CHAT ONLINE! ★
-                &nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="important">
 
-                ★ UNDER CONSTRUCTION! ★
-                &nbsp;&nbsp;&nbsp;&nbsp;
+        &gt;&gt;&gt;&gt;
+        TÄRKEÄÄ! Sivu päivittyy monisivuiseksi!
+        &lt;&lt;&lt;&lt;
 
-                ★ YOU ARE VISITOR NUMBER 000413! ★
+    </div>
 
-            </marquee>
+</div>
 
-        </div>
+
+<!-- =========================
+     SEARCH ENGINES
+========================= -->
+
+<div class="search-engines">
+
+    <div class="search-engines-title">
+        🔍 HAKUKONEET
+    </div>
+
+    <a
+        href="https://www.google.com/"
+        target="_blank"
+        rel="noopener">
+        GOOGLE
+    </a>
+
+    <a
+        href="https://www.bing.com/"
+        target="_blank"
+        rel="noopener">
+        BING
+    </a>
+
+    <a
+        href="https://duckduckgo.com/"
+        target="_blank"
+        rel="noopener">
+        DUCKDUCKGO
+    </a>
+
+    <a
+        href="https://search.brave.com/"
+        target="_blank"
+        rel="noopener">
+        BRAVE
+    </a>
+
+</div>
+
+
+<!-- =========================
+     THREE COLUMNS
+========================= -->
+
+<div class="columns">
+
+
+<!-- =========================
+     LEFT COLUMN
+========================= -->
+
+<div class="left">
+
+    <div class="box-title">
+        MENU
+    </div>
+
+    <div class="menu">
+
+        <a href="index.html">
+            ETUSIVU
+        </a>
+
+        <a href="mina.html">
+            MINÄ
+        </a>
+
+        <a href="kuvat.html">
+            KUVAT
+        </a>
+
+        <a href="peli.html">
+            WORDZAP
+        </a>
+
+        <a href="irc.html">
+            IRC CHAT
+        </a>
+
+        <a href="vieraskirja.html">
+            GUESTBOOK
+        </a>
+
+        <a href="linkit.html">
+            🔗 LINKIT
+        </a>
 
     </div>
 
 
+    <div class="construction">
 
-    <!-- ========================= -->
-    <!-- WELCOME -->
-    <!-- ========================= -->
+        🚧 UNDER CONSTRUCTION 🚧
 
-    <div class="welcome">
+        <br><br>
 
-        <div style="color:#ffffff; font-size:18px; font-weight:bold;">
-
-            *** YOU HAVE FOUND MY HOMEPAGE! ***
-
-        </div>
+        <span class="blink">
+            ★ ★ ★
+        </span>
 
         <br>
 
-        <div class="important">
+        Sivua rakennetaan!
 
-            &gt;&gt;&gt;&gt;
-            TÄRKEÄÄ! Sivu päivittyy monisivuiseksi!
-            &lt;&lt;&lt;&lt;
+        <br>
 
-        </div>
+        <span class="blink">
+            ★ ★ ★
+        </span>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     MIDDLE COLUMN
+========================= -->
+
+<div class="middle">
+
+    <div class="box-title">
+        ★ ESA'S PICTURE OF THE DAY ★
+    </div>
+
+
+    <div class="picture">
+        🌍 🚀 👽
+    </div>
+
+
+    <br>
+
+
+    <div style="
+        text-align:center;
+        color:#ffff00;
+        font-weight:bold;">
+
+        ESA'S PICTURE OF THE DAY
 
     </div>
 
 
-
-    <!-- ========================= -->
-    <!-- HAKUKONEET -->
-    <!-- ========================= -->
-
-    <div class="search-engines">
-
-        <div class="search-engines-title">
-            🔍 HAKUKONEET
-        </div>
+    <br>
 
 
-        <a
-            href="https://www.google.com/"
-            target="_blank"
-            rel="noopener">
-
-            GOOGLE
-
-        </a>
+    <p>
+        Tervetuloa minun kotisivulleni!
+    </p>
 
 
-        <a
-            href="https://www.bing.com/"
-            target="_blank"
-            rel="noopener">
-
-            BING
-
-        </a>
+    <p>
+        Täältä löydät kaikenlaista tavaraa,
+        kuvia, pelejä, juttuja ja muuta
+        Internetistä löytyvää hienoa materiaalia.
+    </p>
 
 
-        <a
-            href="https://duckduckgo.com/"
-            target="_blank"
-            rel="noopener">
-
-            DUCKDUCKGO
-
-        </a>
+    <p>
+        Sivusto on parhaillaan työn alla,
+        joten uusia sivuja tulee lisää.
+    </p>
 
 
-        <a
-            href="https://search.brave.com/"
-            target="_blank"
-            rel="noopener">
+    <p style="color:#00ffff;">
 
-            BRAVE
+        Muista käydä vieraskirjassa
+        jättämässä terveisesi!
 
-        </a>
-
-    </div>
+    </p>
 
 
-
-    <!-- ========================= -->
-    <!-- TÄRKEÄT LINKIT -->
-    <!-- ========================= -->
+    <!-- IMPORTANT LINKS -->
 
     <div class="quick-links">
 
@@ -470,14 +623,11 @@
         </div>
 
 
-        <!-- ARKIPÄIVÄ -->
-
         <div class="link-category">
 
             <div class="link-category-title">
                 🏠 ARKIPÄIVÄ
             </div>
-
 
             <a
                 href="https://www.kela.fi/"
@@ -486,14 +636,12 @@
                 KELA
             </a>
 
-
             <a
                 href="https://www.op.fi/"
                 target="_blank"
                 rel="noopener">
                 OP
             </a>
-
 
             <a
                 href="https://oomi.fi/"
@@ -502,14 +650,12 @@
                 OOMI
             </a>
 
-
             <a
                 href="https://suomi.fi/"
                 target="_blank"
                 rel="noopener">
                 SUOMI.FI
             </a>
-
 
             <a
                 href="https://tyomarkkinatori.fi/"
@@ -521,15 +667,11 @@
         </div>
 
 
-
-        <!-- UUTISET -->
-
         <div class="link-category">
 
             <div class="link-category-title">
                 📰 UUTISET
             </div>
-
 
             <a
                 href="https://www.is.fi/"
@@ -538,14 +680,12 @@
                 ILTA-SANOMAT
             </a>
 
-
             <a
                 href="https://www.ess.fi/"
                 target="_blank"
                 rel="noopener">
                 ETELÄ-SUOMEN SANOMAT
             </a>
-
 
             <a
                 href="https://yle.fi/"
@@ -557,23 +697,18 @@
         </div>
 
 
-
-        <!-- SÄÄ & LIIKENNE -->
-
         <div class="link-category">
 
             <div class="link-category-title">
                 🌦️ SÄÄ & LIIKENNE
             </div>
 
-
             <a
                 href="https://www.ilmatieteenlaitos.fi/"
                 target="_blank"
                 rel="noopener">
-                🌦️ ILMATIETEEN LAITOS
+                ILMATIETEEN LAITOS
             </a>
-
 
             <a
                 href="https://www.foreca.fi/"
@@ -582,42 +717,35 @@
                 🌤️ FORECA
             </a>
 
-
             <a
                 href="https://www.fintraffic.fi/"
                 target="_blank"
                 rel="noopener">
-                🚗 FINTRAFFIC
+                FINTRAFFIC
             </a>
-
 
             <a
                 href="https://www.vr.fi/"
                 target="_blank"
                 rel="noopener">
-                🚆 VR
+                VR
             </a>
-
 
             <a
                 href="https://www.traficom.fi/"
                 target="_blank"
                 rel="noopener">
-                🚘 TRAFICOM
+                TRAFICOM
             </a>
 
         </div>
 
-
-
-        <!-- KAUPAT -->
 
         <div class="link-category">
 
             <div class="link-category-title">
                 🛒 KAUPAT
             </div>
-
 
             <a
                 href="https://www.tokmanni.fi/"
@@ -626,7 +754,6 @@
                 TOKMANNI
             </a>
 
-
             <a
                 href="https://www.lidl.fi/"
                 target="_blank"
@@ -634,14 +761,12 @@
                 LIDL
             </a>
 
-
             <a
                 href="https://www.s-kaupat.fi/"
                 target="_blank"
                 rel="noopener">
-                S-KAUPAT / S-HÄMEENMAA
+                S-KAUPAT
             </a>
-
 
             <a
                 href="https://www.k-ruoka.fi/"
@@ -650,14 +775,12 @@
                 K-RUOKA
             </a>
 
-
             <a
                 href="https://www.motonet.fi/"
                 target="_blank"
                 rel="noopener">
                 MOTONET
             </a>
-
 
             <a
                 href="https://www.puuilo.fi/"
@@ -669,15 +792,11 @@
         </div>
 
 
-
-        <!-- VIIHDE & MEDIA -->
-
         <div class="link-category">
 
             <div class="link-category-title">
                 📺 VIIHDE & MEDIA
             </div>
-
 
             <a
                 href="https://www.spotify.com/fi/"
@@ -686,7 +805,6 @@
                 🎵 SPOTIFY
             </a>
 
-
             <a
                 href="https://www.youtube.com/"
                 target="_blank"
@@ -694,14 +812,12 @@
                 ▶️ YOUTUBE
             </a>
 
-
             <a
                 href="https://www.dna.fi/"
                 target="_blank"
                 rel="noopener">
                 📡 DNA
             </a>
-
 
             <a
                 href="https://elisa.fi/"
@@ -713,15 +829,11 @@
         </div>
 
 
-
-        <!-- PALVELUT -->
-
         <div class="link-category">
 
             <div class="link-category-title">
                 🛠️ PALVELUT
             </div>
-
 
             <a
                 href="https://www.posti.fi/"
@@ -729,7 +841,6 @@
                 rel="noopener">
                 📦 POSTI
             </a>
-
 
             <a
                 href="https://www.finavia.fi/"
@@ -740,9 +851,6 @@
 
         </div>
 
-
-
-        <!-- LINKKISIVU -->
 
         <div class="more-links">
 
@@ -755,297 +863,163 @@
     </div>
 
 
+    <div style="
+        text-align:center;
+        margin-top:20px;">
 
-    <!-- ========================= -->
-    <!-- COLUMNS -->
-    <!-- ========================= -->
+        <span style="
+            color:#ff00ff;
+            font-weight:bold;">
 
-    <div class="columns">
+            ★ TÄMÄ SIVU ON OPTIMOITU
+            800x600 RESOLUUTIOOLLE ★
 
+        </span>
 
-        <!-- LEFT COLUMN -->
+        <br><br>
 
-        <div class="left">
+        <span class="small">
+            Best viewed with Netscape Navigator 4.0
+        </span>
 
-            <div class="box-title">
-                MENU
-            </div>
+    </div>
 
+</div>
 
-            <div class="menu">
 
-                <a href="index.html">
-                    ETUSIVU
-                </a>
+<!-- =========================
+     RIGHT COLUMN
+========================= -->
 
-                <a href="mina.html">
-                    MINÄ
-                </a>
+<div class="right">
 
-                <a href="kuvat.html">
-                    KUVAT
-                </a>
+    <div class="box-title">
+        INFO
+    </div>
 
-                <a href="peli.html">
-                    WORDZAP
-                </a>
 
-                <a href="irc.html">
-                    IRC CHAT
-                </a>
+    <div class="info">
 
-                <a href="vieraskirja.html">
-                    GUESTBOOK
-                </a>
+        <b>Päivitetty:</b>
 
-                <a href="linkit.html">
-                    🔗 LINKIT
-                </a>
+        <br>
 
-            </div>
+        08.10.2026
 
 
-            <div class="construction">
+        <br><br>
 
-                🚧 UNDER CONSTRUCTION 🚧
 
-                <br><br>
+        <b>Sivusto:</b>
 
-                <span class="blink">
-                    ★ ★ ★
-                </span>
+        <br>
 
-                <br>
+        Esa's Web World
 
-                Sivua rakennetaan!
 
-                <br>
+        <br><br>
 
-                <span class="blink">
-                    ★ ★ ★
-                </span>
 
-            </div>
+        <b>Internet vuodesta:</b>
 
-        </div>
+        <br>
 
-
-
-        <!-- MIDDLE COLUMN -->
-
-        <div class="middle">
-
-            <div class="box-title">
-                ★ ESA'S PICTURE OF THE DAY ★
-            </div>
-
-
-            <div class="picture">
-                🌍 🚀 👽
-            </div>
-
-
-            <br>
-
-
-            <div
-                style="text-align:center;
-                       color:#ffff00;
-                       font-weight:bold;">
-
-                ESA'S PICTURE OF THE DAY
-
-            </div>
-
-
-            <br>
-
-
-            <p>
-                Tervetuloa minun kotisivulleni!
-            </p>
-
-
-            <p>
-                Täältä löydät kaikenlaista tavaraa,
-                kuvia, pelejä, juttuja ja muuta
-                Internetistä löytyvää hienoa materiaalia.
-            </p>
-
-
-            <p>
-                Sivusto on parhaillaan työn alla,
-                joten uusia sivuja tulee lisää.
-            </p>
-
-
-            <p style="color:#00ffff;">
-
-                Muista käydä vieraskirjassa
-                jättämässä terveisesi!
-
-            </p>
-
-
-            <div
-                style="text-align:center;
-                       margin-top:20px;">
-
-                <span
-                    style="color:#ff00ff;
-                           font-weight:bold;">
-
-                    ★ TÄMÄ SIVU ON OPTIMOITU
-                    800x600 RESOLUUTIOOLLE ★
-
-                </span>
-
-                <br><br>
-
-                <span class="small">
-
-                    Best viewed with Netscape Navigator 4.0
-
-                </span>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- RIGHT COLUMN -->
-
-        <div class="right">
-
-            <div class="box-title">
-                INFO
-            </div>
-
-
-            <div class="info">
-
-                <b>Päivitetty:</b>
-
-                <br>
-
-                08.10.2026
-
-
-                <br><br>
-
-
-                <b>Sivusto:</b>
-
-                <br>
-
-                Esa's Web World
-
-
-                <br><br>
-
-
-                <b>Internet vuodesta:</b>
-
-                <br>
-
-                1990-luvulta lähtien
-
-            </div>
-
-
-            <div class="counter">
-
-                <div
-                    style="color:#ffff00;
-                           font-weight:bold;">
-
-                    KÄVIJÄLASKURI
-
-                </div>
-
-                <br>
-
-
-                <div class="counter-number">
-                    000413
-                </div>
-
-                <br><br>
-
-
-                <span class="small">
-
-                    YOU ARE VISITOR
-                    <br>
-                    NUMBER 413
-
-                </span>
-
-            </div>
-
-
-            <br>
-
-
-            <div
-                style="text-align:center;
-                       color:#ff00ff;
-                       font-weight:bold;">
-
-                ★ ★ ★
-
-            </div>
-
-
-            <div
-                style="text-align:center;
-                       color:#ffffff;">
-
-                Thanks for visiting!
-
-            </div>
-
-        </div>
+        1990-luvulta lähtien
 
     </div>
 
 
+    <div class="counter">
 
-    <!-- ========================= -->
-    <!-- FOOTER -->
-    <!-- ========================= -->
+        <div style="
+            color:#ffff00;
+            font-weight:bold;">
 
-    <div class="footer">
-
-        <div>
-
-            © Esa's Web World 1998-2026.
-            All rights reserved.
+            KÄVIJÄLASKURI
 
         </div>
 
         <br>
 
-        <div class="small">
 
-            This page is proudly made with HTML.
-
+        <div class="counter-number">
+            000413
         </div>
 
-        <br>
+        <br><br>
 
-        <div style="color:#ffff00;">
 
-            ★ ★ ★ TERVETULOA UUDELLEEN! ★ ★ ★
+        <span class="small">
 
-        </div>
+            YOU ARE VISITOR
+            <br>
+            NUMBER 413
+
+        </span>
 
     </div>
+
+
+    <br>
+
+
+    <div style="
+        text-align:center;
+        color:#ff00ff;
+        font-weight:bold;">
+
+        ★ ★ ★
+
+    </div>
+
+
+    <div style="
+        text-align:center;
+        color:#ffffff;">
+
+        Thanks for visiting!
+
+    </div>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<div class="footer">
+
+    <div>
+
+        © Esa's Web World 1998-2026.
+        All rights reserved.
+
+    </div>
+
+    <br>
+
+    <div class="small">
+
+        This page is proudly made with HTML.
+
+    </div>
+
+    <br>
+
+    <div style="color:#ffff00;">
+
+        ★ ★ ★ TERVETULOA UUDELLEEN! ★ ★ ★
+
+    </div>
+
+</div>
 
 
 </div>
 
 </body>
-
 </html>
+```
