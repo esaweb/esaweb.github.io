@@ -4,35 +4,206 @@
 <meta charset="UTF-8">
 <meta name="keywords" content="Esa, homepage, guestbook, y2k, retro, 1998, IRC, wordzap">
 <title>🌟 ESA'S GUESTBOOK - Jätä puumerkkisi! 🌟</title>
-<style>
-body { margin: 0; background-color: #000033; background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 37px 37px; font-family: "Times New Roman", serif; color: #000000; cursor: default; }
-a { color: #0000ee; text-decoration: underline; }
-a:visited { color: #551a8b; }
-.page { width: 780px; margin: 15px auto; background: #c0c0c0; border: 3px outset #eeeeee; padding: 5px; }
-.header { background: #000080; color: yellow; text-align: center; border: 3px outset #eeeeee; padding: 12px; }
-.header h1 { margin: 0; font-family: "Arial Black", Arial, sans-serif; font-size: 34px; text-shadow: 2px 2px #000000; }
-.columns { display: flex; gap: 5px; margin-top: 5px; }
-.left { width: 145px; flex-shrink: 0; }
-.middle { width: 430px; flex-grow: 1; }
-.right { width: 190px; flex-shrink: 0; }
-.nav-button { display: block; background: #c0c0c0; border: 3px outset #eeeeee; padding: 8px 4px; margin-bottom: 5px; text-align: center; font-family: Arial, sans-serif; font-weight: bold; font-size: 13px; color: black; text-decoration: none; }
-.nav-button:active, .nav-button.active { border: 3px inset #eeeeee; background: #a0a0a0; }
-.box { background: #eeeeee; border: 3px outset #ffffff; margin-bottom: 7px; padding: 7px; }
-.box-title { background: #000080; color: white; font-weight: bold; padding: 3px; margin: -7px -7px 7px -7px; font-family: Arial, sans-serif; }
-.footer { margin-top: 5px; background: #000080; color: white; text-align: center; padding: 10px; font-size: 12px; }
 
-/* RETRO HAKKERI/mIRC TYYLI VIERASKIRJALLE */
-.guestbook-bg { background: #000000; color: #FF00FF; padding: 10px; border: 3px inset #808080; font-family: 'Courier New', monospace; }
-.guestbook-bg a { color: #00FF00; }
-.guestbook-bg a:visited { color: #00AA00; }
-.input-field { background-color: #000000; color: #00FF00; border: 1px solid #FF00FF; font-family: 'Courier New'; font-size: 14px; width: 95%; padding: 3px; }
-.btn-submit { background-color: #00FF00; color: #000000; font-family: 'Courier New'; font-weight: bold; border: 2px solid #FFFFFF; padding: 4px 10px; cursor: pointer; }
-.btn-reset { background-color: #222222; color: #FF00FF; font-family: 'Courier New'; border: 2px solid #FF00FF; padding: 4px 10px; cursor: pointer; }
-.msg-table { border: 1px solid #00FF00; background: #111111; margin-bottom: 10px; width: 100%; color: #FFFFFF; font-family: Arial, sans-serif; }
+<style>
+body {
+    margin: 0;
+    background-color: #000033;
+    background-image: radial-gradient(circle, white 1px, transparent 1px);
+    background-size: 37px 37px;
+    font-family: "Times New Roman", serif;
+    color: #000000;
+    cursor: default;
+}
+
+a {
+    color: #0000ee;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #551a8b;
+}
+
+.page {
+    width: 780px;
+    margin: 15px auto;
+    background: #c0c0c0;
+    border: 3px outset #eeeeee;
+    padding: 5px;
+}
+
+.header {
+    background: #000080;
+    color: yellow;
+    text-align: center;
+    border: 3px outset #eeeeee;
+    padding: 12px;
+}
+
+.header h1 {
+    margin: 0;
+    font-family: "Arial Black", Arial, sans-serif;
+    font-size: 34px;
+    text-shadow: 2px 2px #000000;
+}
+
+.columns {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.left {
+    width: 145px;
+    flex-shrink: 0;
+}
+
+.middle {
+    width: 430px;
+    flex-grow: 1;
+}
+
+.right {
+    width: 190px;
+    flex-shrink: 0;
+}
+
+.nav-button {
+    display: block;
+    background: #c0c0c0;
+    border: 3px outset #eeeeee;
+    padding: 8px 4px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-button:active,
+.nav-button.active {
+    border: 3px inset #eeeeee;
+    background: #a0a0a0;
+}
+
+.box {
+    background: #eeeeee;
+    border: 3px outset #ffffff;
+    margin-bottom: 7px;
+    padding: 7px;
+}
+
+.box-title {
+    background: #000080;
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+    margin: -7px -7px 7px -7px;
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    margin-top: 5px;
+    background: #000080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/* RETRO HAKKERI / mIRC TYYLI VIERASKIRJALLE */
+.guestbook-bg {
+    background: #000000;
+    color: #FF00FF;
+    padding: 10px;
+    border: 3px inset #808080;
+    font-family: "Courier New", monospace;
+}
+
+.guestbook-bg a {
+    color: #00FF00;
+}
+
+.guestbook-bg a:visited {
+    color: #00AA00;
+}
+
+.input-field {
+    background-color: #000000;
+    color: #00FF00;
+    border: 1px solid #FF00FF;
+    font-family: "Courier New";
+    font-size: 14px;
+    width: 95%;
+    padding: 3px;
+}
+
+.btn-submit {
+    background-color: #00FF00;
+    color: #000000;
+    font-family: "Courier New";
+    font-weight: bold;
+    border: 2px solid #FFFFFF;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.btn-reset {
+    background-color: #222222;
+    color: #FF00FF;
+    font-family: "Courier New";
+    border: 2px solid #FF00FF;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.msg-table {
+    border: 1px solid #00FF00;
+    background: #111111;
+    margin-bottom: 10px;
+    width: 100%;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+.thanks {
+    border: 2px solid #00FF00;
+    padding: 10px;
+    margin-bottom: 12px;
+    background: #002200;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .page {
+        width: 96%;
+        box-sizing: border-box;
+    }
+
+    .columns {
+        display: block;
+    }
+
+    .left,
+    .middle,
+    .right {
+        width: 100%;
+    }
+
+    .left {
+        margin-bottom: 5px;
+    }
+}
 </style>
 </head>
+
 <body>
+
 <div class="page">
+
     <div class="header">
         <div style="font-size:18px;">★ ☆ ★ ☆ ★</div>
         <h1>ESA'S HOMEPAGE</h1>
@@ -40,117 +211,318 @@ a:visited { color: #551a8b; }
     </div>
 
     <div class="columns">
+
         <!-- VASEN VALIKKO -->
         <div class="left">
+
             <div class="box">
+
                 <div class="box-title">MENU</div>
+
                 <a href="index.html" class="nav-button">ETUSIVU</a>
                 <a href="mina.html" class="nav-button">MINÄ</a>
                 <a href="kuvat.html" class="nav-button">KUVAT</a>
                 <a href="peli.html" class="nav-button">WORDZAP</a>
                 <a href="irc.html" class="nav-button">IRC CHAT</a>
                 <a href="vieraskirja.html" class="nav-button active">GUESTBOOK</a>
+
             </div>
+
         </div>
 
-        <!-- KESKIOSA (LOMAKE JA VIESTIT) -->
+
+        <!-- KESKIOSA -->
         <div class="middle">
+
             <div class="guestbook-bg">
+
                 <center>
-                    <font size="4" color="#00FF00"><b>*** SIGN MY GUESTBOOK ***</b></font>
-                    <p style="color:#FFFFFF; font-family:Arial; font-size:13px;">Jätä puumerkkisi bittiavaruuteen!</p>
+
+                    <font size="4" color="#00FF00">
+                        <b>*** SIGN MY GUESTBOOK ***</b>
+                    </font>
+
+                    <p style="color:#FFFFFF; font-family:Arial; font-size:13px;">
+                        Jätä puumerkkisi bittiavaruuteen!
+                    </p>
+
                 </center>
 
-                <!-- KIITOSILMOITUS JOS VIESTI LÄHETETTY -->
+
+                <!-- ONNISTUNEEN LÄHETYKSEN ILMOITUS -->
+
                 <script>
-                    if (window.location.search.includes('sent=true')) {
-                        document.write('<table border="2" cellpadding="10" cellspacing="0" bgcolor="#002200" bordercolor="#00FF00" width="100%">');
-                        document.write('<tr><td align="center">');
-                        document.write('<font color="#00FF00"><b>THANK YOU! PUUMERKKI LÄHETETTY!</b></font><br>');
-                        document.write('<span style="font-size:12px; color:#fff;">Viesti meni Esan sähköpostiin!</span>');
-                        document.write('</td></tr></table><br>');
-                    }
+                if (
+                    window.location.search.includes("success") ||
+                    window.location.search.includes("sent=true")
+                ) {
+                    document.write(
+                        '<div class="thanks">' +
+                        '<font color="#00FF00"><b>THANK YOU! PUUMERKKI LÄHETETTY!</b></font><br>' +
+                        '<span style="font-size:12px; color:#FFFFFF;">Kiitos viestistä! Se on lähetetty Esalle.</span>' +
+                        '</div>'
+                    );
+                }
                 </script>
 
-                <!-- LOMAKE KORJATULLA OMAN SIVUSTON OHJAUKSELLA -->
+
+                <!-- WEB3FORMS -->
+
                 <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="d356b8bc-6420-4ac1-aba4-a046d711d3f8">
-                    <input type="hidden" name="subject" value="Uusi viesti Esan Vieraskirjaan!">
-                    <input type="checkbox" name="botcheck" style="display: none;">
-                    
-                    <!-- TÄSSÄ ON SE TÄRKEÄ KORJATTU OMA OSOITTEESI -->
-                    <input type="hidden" name="redirect" value="https://esaweb.github.io/vieraskirja.html"
+
+                    <!-- Web3Forms access key -->
+                    <input type="hidden"
+                           name="access_key"
+                           value="d356b8bc-6420-4ac1-aba4-a046d711d3f8">
+
+                    <!-- Sähköpostin aihe -->
+                    <input type="hidden"
+                           name="subject"
+                           value="Uusi viesti Esan Vieraskirjaan!">
+
+                    <!-- Palaa takaisin vieraskirjaan lähetyksen jälkeen -->
+                    <input type="hidden"
+                           name="redirect"
+                           value="https://esaweb.github.io/vieraskirja.html?success=true">
+
+                    <!-- Web3Forms bottisuoja -->
+                    <input type="checkbox"
+                           name="botcheck"
+                           style="display:none;">
+
 
                     <table border="0" width="100%" cellspacing="5">
+
                         <tr>
-                            <td width="35%"><font color="#00FF00"><b>Nimi:</b></font></td>
-                            <td><input type="text" name="name" class="input-field" required></td>
-                        </tr>
-                        <tr>
-                            <td><font color="#00FF00"><b>Kotisivu:</b></font></td>
-                            <td><input type="url" name="website" value="http://" class="input-field"></td>
-                        </tr>
-                        <tr>
-                            <td valign="top"><font color="#00FF00"><b>Terveiset:</b></font></td>
-                            <td><textarea name="message" rows="4" class="input-field" required></textarea></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" align="center">
-                                <br>
-                                <input type="submit" value="[ Lähetä ]" class="btn-submit">
-                                &nbsp;&nbsp;
-                                <input type="reset" value="[ Tyhjennä ]" class="btn-reset">
+                            <td width="35%">
+                                <font color="#00FF00">
+                                    <b>Nimi:</b>
+                                </font>
+                            </td>
+
+                            <td>
+                                <input type="text"
+                                       name="name"
+                                       class="input-field"
+                                       required>
                             </td>
                         </tr>
+
+
+                        <tr>
+                            <td>
+                                <font color="#00FF00">
+                                    <b>Kotisivu:</b>
+                                </font>
+                            </td>
+
+                            <td>
+                                <input type="url"
+                                       name="website"
+                                       value="http://"
+                                       class="input-field">
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td valign="top">
+                                <font color="#00FF00">
+                                    <b>Terveiset:</b>
+                                </font>
+                            </td>
+
+                            <td>
+                                <textarea name="message"
+                                          rows="4"
+                                          class="input-field"
+                                          required></textarea>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td colspan="2" align="center">
+
+                                <br>
+
+                                <input type="submit"
+                                       value="[ Lähetä ]"
+                                       class="btn-submit">
+
+                                &nbsp;&nbsp;
+
+                                <input type="reset"
+                                       value="[ Tyhjennä ]"
+                                       class="btn-reset">
+
+                            </td>
+                        </tr>
+
                     </table>
+
                 </form>
 
+
                 <br>
+
                 <hr color="#FF00FF" size="2">
+
                 <br>
 
-                <font color="#00FF00" size="3"><b>💬 Vanhat puumerkit:</b></font><br><br>
 
-                <!-- Viesti 1 -->
-                <table border="1" cellpadding="6" cellspacing="0" class="msg-table">
+                <font color="#00FF00" size="3">
+                    <b>💬 Vanhat puumerkit:</b>
+                </font>
+
+                <br><br>
+
+
+                <!-- VIESTI 1 -->
+
+                <table border="1"
+                       cellpadding="6"
+                       cellspacing="0"
+                       class="msg-table">
+
                     <tr>
                         <td bgcolor="#222222">
-                            <font size="2" color="#00FF00"><b>Lähettäjä:</b> MegaHacker99 | <b>Päivä:</b> 08.10.2026</font>
+
+                            <font size="2" color="#00FF00">
+
+                                <b>Lähettäjä:</b> MegaHacker99 |
+                                <b>Päivä:</b> 08.10.2026
+
+                            </font>
+
                         </td>
                     </tr>
+
                     <tr>
                         <td>
-                            <font size="2">Tosi siistit sivut sulla Esa! Tää Y2K-look on parasta ikinä. Mistä sä löysit noi vilkkuvat tähdet? Lisää Wordzap-juttuja odotellessa! 😎👍</font>
+
+                            <font size="2">
+
+                                Tosi siistit sivut sulla Esa! Tää Y2K-look on parasta ikinä.
+                                Mistä sä löysit noi vilkkuvat tähdet?
+                                Lisää Wordzap-juttuja odotellessa! 😎👍
+
+                            </font>
+
                         </td>
                     </tr>
+
                 </table>
 
-                <!-- Viesti 2 -->
-                <table border="1" cellpadding="6" cellspacing="0" class="msg-table">
+
+                <!-- VIESTI 2 -->
+
+                <table border="1"
+                       cellpadding="6"
+                       cellspacing="0"
+                       class="msg-table">
+
                     <tr>
                         <td bgcolor="#222222">
-                            <font size="2" color="#00FF00"><b>Lähettäjä:</b> Koodari_Make | <b>Päivä:</b> 07.10.2026</font>
+
+                            <font size="2" color="#00FF00">
+
+                                <b>Lähettäjä:</b> Koodari_Make |
+                                <b>Päivä:</b> 07.10.2026
+
+                            </font>
+
                         </td>
                     </tr>
+
                     <tr>
                         <td>
-                            <font size="2">Kovaa tykitystä! IRC-botti on sairaan hieno. Testasin kysyy siltä warez-koodei mut se alko dullailee jotain salaisuuksista. 5/5 sivu!</font>
+
+                            <font size="2">
+
+                                Kovaa tykitystä! IRC-botti on sairaan hieno.
+                                Testasin kysyy siltä warez-koodei mut se alko dullailee
+                                jotain salaisuuksista. 5/5 sivu!
+
+                            </font>
+
                         </td>
                     </tr>
+
                 </table>
+
+
+                <br>
+
+                <center>
+
+                    <font size="2" color="#808080">
+                        *** Best viewed with Netscape Navigator 4.0 ***
+                    </font>
+
+                    <br>
+
+                    <font size="2" color="#808080">
+                        800x600 recommended
+                    </font>
+
+                </center>
+
             </div>
+
         </div>
 
-        <!-- OIKEA REUNA (KORJATTU JA EHIÄ) -->
+
+        <!-- OIKEA REUNA -->
+
         <div class="right">
+
             <div class="box">
-                <div class="box-title">GUESTBOOK INFO</div>
-                Kaikki viestit tarkistetaan ylläpidon toimesta modeemiruuhkien välttämiseksi! 📠
+
+                <div class="box-title">
+                    GUESTBOOK INFO
+                </div>
+
+                Kaikki viestit tarkistetaan ylläpidon toimesta
+                modeemiruuhkien välttämiseksi! 📠
+
             </div>
+
+
+            <div class="box">
+
+                <div class="box-title">
+                    STATUS
+                </div>
+
+                <font face="Courier New" size="2">
+
+                    <b>MODEM:</b> CONNECTED<br>
+                    <b>IRC:</b> ONLINE<br>
+                    <b>WEB:</b> UNDER CONSTRUCTION<br>
+
+                </font>
+
+            </div>
+
         </div>
+
     </div>
 
-    <div class="footer">© Esa's Web World 1998-2026. All rights reserved.</div>
+
+    <div class="footer">
+
+        © Esa's Web World 1998-2026. All rights reserved.
+
+        <br>
+
+        <font size="1">
+            This page is powered by 33.6k technology.
+        </font>
+
+    </div>
+
 </div>
+
 </body>
 </html>
