@@ -72,27 +72,26 @@ a:visited { color: #551a8b; }
                     }
                 </script>
 
-                <!-- LOMAKE KORJATUILLA ELEMENTTIEN NIMILLÄ -->
+                <!-- LOMAKE KORJATULLA OMAN SIVUSTON OHJAUKSELLA -->
                 <form action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="d356b8bc-6420-4ac1-aba4-a046d711d3f8">
                     <input type="hidden" name="subject" value="Uusi viesti Esan Vieraskirjaan!">
                     <input type="checkbox" name="botcheck" style="display: none;">
-                    <input type="hidden" name="redirect" value="https://github.io">
+                    
+                    <!-- TÄSSÄ ON SE TÄRKEÄ KORJATTU OMA OSOITTEESI -->
+                    <input type="hidden" name="redirect" value="https://esaweb.github.io/vieraskirja.html"
 
                     <table border="0" width="100%" cellspacing="5">
                         <tr>
                             <td width="35%"><font color="#00FF00"><b>Nimi:</b></font></td>
-                            <!-- Korjattu name="name" -->
                             <td><input type="text" name="name" class="input-field" required></td>
                         </tr>
                         <tr>
                             <td><font color="#00FF00"><b>Kotisivu:</b></font></td>
-                            <!-- Korjattu name="website" -->
                             <td><input type="url" name="website" value="http://" class="input-field"></td>
                         </tr>
                         <tr>
                             <td valign="top"><font color="#00FF00"><b>Terveiset:</b></font></td>
-                            <!-- Korjattu name="message" -->
                             <td><textarea name="message" rows="4" class="input-field" required></textarea></td>
                         </tr>
                         <tr>
@@ -142,7 +141,7 @@ a:visited { color: #551a8b; }
             </div>
         </div>
 
-        <!-- OIKEA REUNA -->
+        <!-- OIKEA REUNA (KORJATTU JA EHIÄ) -->
         <div class="right">
             <div class="box">
                 <div class="box-title">GUESTBOOK INFO</div>
