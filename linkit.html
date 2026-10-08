@@ -1,0 +1,474 @@
+```html
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ESA'S HOMEPAGE - LINKIT</title>
+
+<style>
+    body {
+        background-color: #000000;
+        color: #00ff00;
+        font-family: "Courier New", monospace;
+        margin: 0;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .page {
+        max-width: 950px;
+        margin: auto;
+        border: 3px ridge #808080;
+        background-color: #000080;
+    }
+
+    .header {
+        text-align: center;
+        background-color: #000080;
+        padding: 15px 10px 10px 10px;
+        border-bottom: 3px ridge #c0c0c0;
+    }
+
+    .header h1 {
+        color: #ffff00;
+        font-size: 34px;
+        margin: 5px 0;
+        text-shadow: 2px 2px #ff00ff;
+    }
+
+    .subtitle {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .stars {
+        color: #ffffff;
+        font-size: 18px;
+        letter-spacing: 4px;
+    }
+
+    .marquee-box {
+        margin: 12px 5px 5px 5px;
+        border: 3px ridge #c0c0c0;
+        background-color: #000000;
+        padding: 5px 0;
+    }
+
+    .marquee-box marquee {
+        color: #ffff00;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .columns {
+        display: flex;
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .left,
+    .middle {
+        border: 3px ridge #c0c0c0;
+        padding: 10px;
+        background-color: #000000;
+    }
+
+    .left {
+        width: 22%;
+    }
+
+    .middle {
+        width: 78%;
+    }
+
+    .box-title {
+        background-color: #c0c0c0;
+        color: #000000;
+        font-weight: bold;
+        text-align: center;
+        padding: 4px;
+        margin: -10px -10px 10px -10px;
+        font-family: Arial, sans-serif;
+    }
+
+    .menu a {
+        display: block;
+        color: #00ffff;
+        text-decoration: underline;
+        padding: 5px 2px;
+        font-weight: bold;
+    }
+
+    .menu a:hover {
+        color: #ffff00;
+        background-color: #800080;
+    }
+
+    .link-section {
+        border: 2px solid #00ff00;
+        margin: 15px 5px;
+        padding: 10px;
+    }
+
+    .link-title {
+        color: #ffff00;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+
+    .links a {
+        color: #00ffff;
+        background-color: #000080;
+        border: 2px outset #808080;
+        padding: 7px;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .links a:hover {
+        color: #ffff00;
+        background-color: #800080;
+    }
+
+    .construction {
+        color: #ffff00;
+        border: 2px dashed #ff00ff;
+        padding: 8px;
+        margin-top: 15px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .footer {
+        border-top: 3px ridge #c0c0c0;
+        text-align: center;
+        padding: 12px;
+        color: #ffffff;
+        background-color: #000080;
+        font-size: 12px;
+    }
+
+    .small {
+        font-size: 11px;
+        color: #c0c0c0;
+    }
+
+    @media (max-width: 700px) {
+        .columns {
+            flex-direction: column;
+        }
+
+        .left,
+        .middle {
+            width: auto;
+        }
+
+        .header h1 {
+            font-size: 25px;
+        }
+
+        .links {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <!-- HEADER -->
+    <div class="header">
+
+        <div class="stars">
+            ★ ☆ ★ ☆ ★
+        </div>
+
+        <h1>ESA'S HOMEPAGE</h1>
+
+        <div class="subtitle">
+            🔗 INTERNET-LINKIT
+        </div>
+
+        <div class="marquee-box">
+            <marquee behavior="scroll" direction="left" scrollamount="5">
+                ★ TERVETULOA LINKKISIVULLE! ★
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                ★ HYÖDYLLISIÄ LINKKEJÄ! ★
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                ★ INTERNETIN AARTEITA! ★
+            </marquee>
+        </div>
+
+    </div>
+
+
+    <!-- COLUMNS -->
+    <div class="columns">
+
+        <!-- LEFT COLUMN -->
+        <div class="left">
+
+            <div class="box-title">
+                MENU
+            </div>
+
+            <div class="menu">
+
+                <a href="index.html">
+                    ETUSIVU
+                </a>
+
+                <a href="mina.html">
+                    MINÄ
+                </a>
+
+                <a href="kuvat.html">
+                    KUVAT
+                </a>
+
+                <a href="peli.html">
+                    WORDZAP
+                </a>
+
+                <a href="irc.html">
+                    IRC CHAT
+                </a>
+
+                <a href="vieraskirja.html">
+                    GUESTBOOK
+                </a>
+
+                <a href="linkit.html">
+                    🔗 LINKIT
+                </a>
+
+            </div>
+
+
+            <div class="construction">
+
+                🚧 UNDER CONSTRUCTION 🚧
+
+                <br><br>
+
+                ★ ★ ★
+
+                <br>
+
+                Lisää linkkejä tulossa!
+
+                <br>
+
+                ★ ★ ★
+
+            </div>
+
+        </div>
+
+
+        <!-- MIDDLE COLUMN -->
+        <div class="middle">
+
+            <div class="box-title">
+                ★ HYÖDYLLISET INTERNET-LINKIT ★
+            </div>
+
+
+            <!-- ARKIPÄIVÄ -->
+            <div class="link-section">
+
+                <div class="link-title">
+                    🇫🇮 ARKIPÄIVÄ
+                </div>
+
+                <div class="links">
+
+                    <a href="https://www.kela.fi/" target="_blank" rel="noopener">
+                        KELA
+                    </a>
+
+                    <a href="https://www.op.fi/" target="_blank" rel="noopener">
+                        OP
+                    </a>
+
+                    <a href="https://www.oomi.fi/" target="_blank" rel="noopener">
+                        OOMI
+                    </a>
+
+                    <a href="https://www.suomi.fi/" target="_blank" rel="noopener">
+                        SUOMI.FI
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- UUTISET -->
+            <div class="link-section">
+
+                <div class="link-title">
+                    📰 UUTISET
+                </div>
+
+                <div class="links">
+
+                    <a href="https://www.is.fi/" target="_blank" rel="noopener">
+                        ILTA-SANOMAT
+                    </a>
+
+                    <a href="https://www.ess.fi/" target="_blank" rel="noopener">
+                        ETELÄ-SUOMEN SANOMAT
+                    </a>
+
+                    <a href="https://yle.fi/" target="_blank" rel="noopener">
+                        YLE
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SÄÄ JA LIIKENNE -->
+            <div class="link-section">
+
+                <div class="link-title">
+                    🌦️ SÄÄ & LIIKENNE
+                </div>
+
+                <div class="links">
+
+                    <a href="https://www.ilmatieteenlaitos.fi/" target="_blank" rel="noopener">
+                        ILMATIETEEN LAITOS
+                    </a>
+
+                    <a href="https://www.fintraffic.fi/" target="_blank" rel="noopener">
+                        FINTRAFFIC
+                    </a>
+
+                    <a href="https://www.vr.fi/" target="_blank" rel="noopener">
+                        VR
+                    </a>
+
+                    <a href="https://www.traficom.fi/" target="_blank" rel="noopener">
+                        TRAFICOM
+                    </a>
+
+                    <a href="https://www.tankille.fi/" target="_blank" rel="noopener">
+                        TANKILLE – BENSAN HINNAT
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- KAUPAT -->
+            <div class="link-section">
+
+                <div class="link-title">
+                    🛒 KAUPAT
+                </div>
+
+                <div class="links">
+
+                    <a href="https://www.tokmanni.fi/" target="_blank" rel="noopener">
+                        TOKMANNI
+                    </a>
+
+                    <a href="https://www.lidl.fi/" target="_blank" rel="noopener">
+                        LIDL
+                    </a>
+
+                    <a href="https://www.s-kanava.fi/" target="_blank" rel="noopener">
+                        S-RYHMÄ / S-HÄMEENMAA
+                    </a>
+
+                    <a href="https://www.k-ruoka.fi/" target="_blank" rel="noopener">
+                        K-RUOKA
+                    </a>
+
+                    <a href="https://www.motonet.fi/" target="_blank" rel="noopener">
+                        MOTONET
+                    </a>
+
+                    <a href="https://www.puuilo.fi/" target="_blank" rel="noopener">
+                        PUUILO
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PALVELUT -->
+            <div class="link-section">
+
+                <div class="link-title">
+                    📦 PALVELUT
+                </div>
+
+                <div class="links">
+
+                    <a href="https://www.posti.fi/" target="_blank" rel="noopener">
+                        POSTI
+                    </a>
+
+                    <a href="https://www.finavia.fi/" target="_blank" rel="noopener">
+                        FINAVIA
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div style="text-align:center; color:#ff00ff; font-weight:bold; margin:20px;">
+                ★ ★ ★ LISÄÄ LINKKEJÄ TULOSSA! ★ ★ ★
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+
+        <div>
+            © Esa's Web World 1998-2026. All rights reserved.
+        </div>
+
+        <br>
+
+        <div class="small">
+            This page is proudly made with HTML.
+        </div>
+
+        <br>
+
+        <div style="color:#ffff00;">
+            ★ ★ ★ TERVETULOA UUDELLEEN! ★ ★ ★
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+```
